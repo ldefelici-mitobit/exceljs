@@ -635,7 +635,7 @@ export interface Column {
 	/**
 	 * The cell values in the column
 	 */
-	values: ReadonlyArray<CellValue>;
+	values: CellValue;
 
 	/**
 	 * Column letter key
@@ -1834,6 +1834,11 @@ export interface TableColumnProperties {
 	  * Optional formula for custom functions
 	  */
 	totalsRowFormula?: string;
+
+	/**
+	 * Styles applied to the column
+	 */
+	style?: Partial<Style>;
 }
 
 
